@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <WarningLevel>0</WarningLevel>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AspNetCoreRateLimit" Version="3.0.5" />
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+		<PackageReference Include="Autofac.Extras.DynamicProxy" Version="5.0.0" />
+		<PackageReference Include="AutoMapper" Version="9.0.0" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+		<PackageReference Include="Consul" Version="1.6.1.1" />
+		<PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson" Version="5.0.0-preview.2.20167.3" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="5.0.0-preview.2.20160.3" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="3.1.0" />
+		<PackageReference Include="MiniProfiler.AspNetCore.Mvc" Version="4.1.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.3.3" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="5.1.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Blog.Core.Common\Blog.Core.Common.csproj" />
+		<ProjectReference Include="..\Blog.Core.EventBus\Blog.Core.EventBus.csproj" />
+		<ProjectReference Include="..\Blog.Core.IRepository\Blog.Core.IRepository.csproj" />
+		<ProjectReference Include="..\Blog.Core.IServices\Blog.Core.IServices.csproj" />
+		<ProjectReference Include="..\Blog.Core.Model\Blog.Core.Model.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="EventHandling\" />
+	</ItemGroup>
+
+</Project>

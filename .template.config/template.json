@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",//template.json 文件的 JSON 架构，可以不要该键值对
+    "author": "Stephen", //必填！模板创建者
+    "classifications": [ "Web/WebAPI" ], //必填，这个对应模板的Tags，其他的比如 [ "Common", "Console" ],
+    "name": "Blog.Core Dotnet", //必填，这个是模板名，比如ASP.NET Core Web API
+    "identity": "Sp.Core.Webapi", //可选，模板的唯一名称
+    "shortName": "dotnetcoresp", //必填，这个对应模板的短名称，比如webapi
+    "tags": {
+      "language": "C#" ,
+      "type":"project"
+    },
+    "sourceName": "Blog.Core",  // 可选，要替换的名字，这个就是模板的项目名，以后新建的时候，会把这个名字替换成其他，比如HelloBlog（警告！这里不要写一些专用词汇，比如app呀，net呀，core之类的）
+    "preferNameDirectory": true  // 可选，添加目录  
+}

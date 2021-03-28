@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blog.Core</name>
+    </assembly>
+    <members>
+        <member name="F:Blog.Core.Controllers.AdvertisementController._advertisementServices">
+            <summary>
+            服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="F:Blog.Core.Controllers.BlogArticleController._blogArticleServices">
+            <summary>
+            服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Controllers.BlogController.Get(System.Int32,System.Int32)">
+            <summary>
+            测试仓储层到领域层到服务层的DTO
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.BlogController.Get(System.Int32)">
+            <summary>
+            获取博客详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.DbFirst.DbFirstController.#ctor(SqlSugar.ISqlSugarClient,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Controllers.DbFirst.DbFirstController.GetFrameFiles">
+            <summary>
+            获取 整体框架 文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.DbFirst.DbFirstController.GetFrameFilesByTableNames(System.String[],System.String)">
+            <summary>
+            根据数据库表名 生成整体框架
+            仅针对通过CodeFirst生成表的情况
+            </summary>
+            <param name="ConnID">数据库链接名称</param>
+            <param name="tableNames">需要生成的表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.DbFirst.DbFirstController.GetAllFrameFilesByTableNames(System.String[],System.String)">
+            <summary>
+            DbFrist 根据数据库表名 生成整体框架,包含Model层
+            </summary>
+            <param name="ConnID">数据库链接名称</param>
+            <param name="tableNames">需要生成的表名</param>
+            <returns></returns>
+        </member>
+        <member name="F:Blog.Core.Controllers.GuestbookController._guestbookServices">
+            <summary>
+            服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="T:Blog.Core.Controllers.HealthCheckController">
+            <summary>
+            健康检查
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Controllers.HealthCheckController.Index">
+            <summary>
+            健康检查接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.LoginController.#ctor(Blog.Core.IServices.ISysUserInfoServices,Blog.Core.IServices.IUserRoleServices,Blog.Core.IServices.IRoleServices,Blog.Core.AuthHelper.PermissionRequirement)">
+            <summary>
+            构造函数注入
+            </summary>
+            <param name="sysUserInfoServices"></param>
+            <param name="userRoleServices"></param>
+            <param name="roleServices"></param>
+            <param name="requirement"></param>
+        </member>
+        <member name="M:Blog.Core.Controllers.LoginController.GetJwtStr(System.String,System.String)">
+            <summary>
+            获取JWT的方法1
+            </summary>
+            <param name="name"></param>
+            <param name="pass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.LoginController.GetJwtStrForNuxt(System.String,System.String)">
+            <summary>
+            获取JWT的方法2：给Nuxt提供
+            </summary>
+            <param name="name"></param>
+            <param name="pass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.LoginController.GetJwtToken3(System.String,System.String)">
+            <summary>
+            获取JWT的方法3：整个系统主要方法
+            </summary>
+            <param name="name"></param>
+            <param name="pass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.LoginController.GetJwtToken3Test(System.String,System.String)">
+            <summary>
+            获取JWT的方法3：整个系统主要方法
+            </summary>
+            <param name="name"></param>
+            <param name="pass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.LoginController.Getjsonp(System.String,System.Int64,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取JWT的方法4：给 JSONP 测试
+            </summary>
+            <param name="callBack"></param>
+            <param name="id"></param>
+            <param name="sub"></param>
+            <param name="expiresSliding"></param>
+            <param name="expiresAbsoulute"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Blog.Core.Controllers.ModulePermissionController._modulePermissionServices">
+            <summary>
+            服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="F:Blog.Core.Controllers.PasswordLibController._passwordLibServices">
+            <summary>
+            服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="F:Blog.Core.Controllers.PermissionController._permissionServices">
+            <summary>
+            服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="F:Blog.Core.Controllers.RoleController._roleServices">
+            <summary>
+            服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="F:Blog.Core.Controllers.RoleModulePermissionController._roleModulePermissionServices">
+            <summary>
+            服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="F:Blog.Core.Controllers.TopicController._topicServices">
+            <summary>
+            服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="F:Blog.Core.Controllers.TopicDetailController._topicDetailServices">
+            <summary>
+            服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Controllers.TransactionController.TestTranInRepositoryAOP(System.Int32)">
+            <summary>
+            测试AOP事务
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Blog.Core.Controllers.UserRoleController._userRoleServices">
+            <summary>
+            服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Controllers.V1.ApbController.Get">
+            <summary>
+            V1版本的测试接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.V2.ApbController.Get">
+            <summary>
+            V2版本的测试接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.ValuesController.V2_Get">
+            <summary>
+            v2版本的接口信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.ValuesController.EventBusTry(Blog.Core.EventBus.IEventBus,System.String)">
+            <summary>
+            测试RabbitMQ事件总线
+            </summary>
+            <param name="_eventBus"></param>
+            <param name="blogId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Blog.Core.SwaggerHelper.CustomRouteAttribute">
+            <summary>
+            自定义路由 /api/{version}/[controler]/[action]
+            </summary>
+        </member>
+        <member name="P:Blog.Core.SwaggerHelper.CustomRouteAttribute.GroupName">
+            <summary>
+            分组名称,是来实现接口 IApiDescriptionGroupNameProvider
+            </summary>
+        </member>
+        <member name="M:Blog.Core.SwaggerHelper.CustomRouteAttribute.#ctor(System.String)">
+            <summary>
+            自定义路由构造函数，继承基类路由
+            </summary>
+            <param name="actionName"></param>
+        </member>
+        <member name="M:Blog.Core.SwaggerHelper.CustomRouteAttribute.#ctor(Blog.Core.Extensions.CustomApiVersion.ApiVersions,System.String)">
+            <summary>
+            自定义版本+路由构造函数，继承基类路由
+            </summary>
+            <param name="actionName"></param>
+            <param name="version"></param>
+        </member>
+        <member name="M:Blog.Core.Filter.GlobalExceptionsFilter.WriteLog(System.String,System.String,System.Exception,System.String)">
+            <summary>
+            自定义返回格式
+            </summary>
+            <param name="throwMsg">自定义错误</param>
+            <param name="resultJson">传入参数</param>
+            <param name="ex">异常提示</param>
+            <param name="apiPath">接口路径</param>
+            <returns></returns>
+        </member>
+        <member name="P:Blog.Core.Filter.JsonErrorResponse.Message">
+            <summary>
+            生产环境的消息
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Filter.JsonErrorResponse.DevelopmentMessage">
+            <summary>
+            开发环境的消息
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Filter.JsonErrorResponse.ResultJson">
+            <summary>
+            传入Json参数
+            </summary>
+        </member>
+        <member name="T:Blog.Core.Filter.GlobalRoutePrefixFilter">
+            <summary>
+            全局路由前缀公约
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Startup.repository">
+            <summary>
+            log4net 仓储库
+            </summary>
+        </member>
+    </members>
+</doc>
