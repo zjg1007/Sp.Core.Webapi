@@ -43,13 +43,16 @@ dotnet run（运行调试）
 
 ![Logo](https://github.com/zjg1007/Sp.Core.Webapi/blob/master/Blog.Core/wwwroot/Bearer.png)
 
-3.配置Bearer
+2.配置Bearer
 
 ![Logo](https://github.com/zjg1007/Sp.Core.Webapi/blob/master/Blog.Core/wwwroot/Token.png)
 
 ### 测试用户中间件
+
+```
 http://localhost:5001/noauth?userid=admin&&rolename=123  //请求地址，通过Url参数的形式，设置用户id和rolename
 http://localhost:5001/noauth/reset   // 重置角色信息
+```
    
    
    
