@@ -38,8 +38,8 @@ dotnet run（运行调试）
 
 
 ## 两种调试方法
-### 通过ToKen配置Bearer获取权限
-1./api/Login/Token 获取ToKen令牌
+### 1.通过ToKen配置Bearer获取权限
+1 /api/Login/Token 获取ToKen令牌
 
 ![Logo](https://github.com/zjg1007/Sp.Core.Webapi/blob/master/Blog.Core/wwwroot/Bearer.png)
 
@@ -47,7 +47,7 @@ dotnet run（运行调试）
 
 ![Logo](https://github.com/zjg1007/Sp.Core.Webapi/blob/master/Blog.Core/wwwroot/Token.png)
 
-### 测试用户中间件
+### 2.测试用户中间件
 
 ```
 http://localhost:5001/noauth?userid=admin&&rolename=123  //请求地址，通过Url参数的形式，设置用户id和rolename
