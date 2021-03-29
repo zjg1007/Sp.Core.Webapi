@@ -41,11 +41,12 @@ dotnet run（运行调试）
 ### 1.通过ToKen配置Bearer获取权限
 1 /api/Login/Token 获取ToKen令牌
 
-![Logo](https://github.com/zjg1007/Sp.Core.Webapi/blob/master/Blog.Core/wwwroot/Bearer.png)
+![Logo](https://github.com/zjg1007/Sp.Core.Webapi/blob/master/Blog.Core/wwwroot/Token.png)
+
 
 2.配置Bearer
 
-![Logo](https://github.com/zjg1007/Sp.Core.Webapi/blob/master/Blog.Core/wwwroot/Token.png)
+![Logo](https://github.com/zjg1007/Sp.Core.Webapi/blob/master/Blog.Core/wwwroot/Bearer.png)
 
 ### 2.测试用户中间件
 
